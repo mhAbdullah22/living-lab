@@ -7,6 +7,14 @@
 <!-- daisyUI cdn --> 
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 <!-- customize cdn -->
 <script>
   tailwind.config = {
@@ -14,15 +22,84 @@
       extend: {
         colors: {
           clifford: '#da373d',
+          'header-color': 'rgb(255, 220, 38)',
+          'header-bg-color':'rgb(255, 249, 244)',
         }
       }
     }
   }
 </script>
+<style>
+  .adlam-font {
+  font-family: "ADLaM Display", serif; 
+}
+.sora-font{
+  font-family: "Sora", serif;
+}
+
+</style>
 </head>
-<body>
-  <header></header>
-  <main></main>
+<body class="sora-font">
+  <header class="bg-header-bg-color" >
+    <div class="navbar  container mx-auto">
+      <div class="navbar-start">
+        
+       <img class="w-8 mr-2" src="c1-assets/logo-header.png" alt="">
+       <h3 class="text-[26px] hidden lg:flex ">Browses<span class="text-header-color">4</span>Pets</h3>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-[20px]">Find a pet</a></li>
+          <li>
+            <a class="text-[20px]">Breeds</a>
+          </li>
+          <li><a class="text-[20px]">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+        </div>
+        <div class="hidden lg:flex items-center">
+          <img class="h-5" src="c1-assets/Vector.png" alt="">
+          <img class="h-5 mx-4" src="c1-assets/Vector (1).png" alt="">
+          <button class="btn mx-3 border-header-color text-[20px] bg-header-bg-color px-8 py-1">Login</button>
+          <button class="btn bg-header-color text-[20px] px-8 py-1">Register</button>
+        </div>
+        
+      </div>
+    </div>
+  
+  </header>
+
+  <main class="container mx-auto mt-20">
+    <div class="mb-[50px] px-2 relative">
+      <div class="z-50 relative">
+        <h1 class="text-3xl lg:text-6xl adlam-font">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+      <p class="my-3">Discover a world of treats, toys, and essentials handpicked for your <br> furry friends. Shop now and make tails wag with joy!</p>
+      <button class="btn bg-header-color px-6">Find a pet</button>
+      </div>
+      
+      <div class="absolute top-[190px] lg:top-[-20px]">
+        <img class="h-50" src="c1-assets/cat-big.png" alt="">
+      </div>
+      
+    </div>
+
+  </main>
   <footer></footer>
   
 </body>
