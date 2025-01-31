@@ -24,6 +24,8 @@
           clifford: '#da373d',
           'header-color': 'rgb(255, 220, 38)',
           'header-bg-color':'rgb(255, 249, 244)',
+          'browse-color':'rgb(249, 223, 138)',
+
         }
       }
     }
@@ -40,7 +42,9 @@
 </style>
 </head>
 <body class="sora-font">
+  <!-- header section -->
   <header class="bg-header-bg-color" >
+    <!-- navbar -->
     <div class="navbar  container mx-auto">
       <div class="navbar-start">
         
@@ -84,20 +88,67 @@
     </div>
   
   </header>
+  <hr class="border-black lg:border-none">
 
-  <main class="container mx-auto mt-20">
-    <div class="mb-[50px] px-2 relative">
+  <!-- main section -->
+  <main class="container mx-auto mt-10 lg:mt-20">
+  <!-- banner section -->
+    <div class="mb-[50px] px-2 relative h-[400px] md:h-[600px] lg:h-[740px]">
       <div class="z-50 relative">
         <h1 class="text-3xl lg:text-6xl adlam-font">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
       <p class="my-3">Discover a world of treats, toys, and essentials handpicked for your <br> furry friends. Shop now and make tails wag with joy!</p>
       <button class="btn bg-header-color px-6">Find a pet</button>
       </div>
-      
-      <div class="absolute top-[190px] lg:top-[-20px]">
+            <div class="absolute top-[145px] lg:top-[-20px]">
         <img class="h-50" src="c1-assets/cat-big.png" alt="">
       </div>
       
     </div>
+  <!-- browse section -->
+    <section class="mx-3 mb-8">
+      <h3 class="text-4xl adlam-font mb-6">Browse By Categories</h3>
+      <!--card container  -->
+      <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 ">
+      <!-- card 1 -->
+        <div class="bg-browse-color px-8 py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img src="c1-assets/dog-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Dog</h4>
+          <p>3 items</p>
+        </div>
+      <!-- card 2 -->
+        <div class="bg-browse-color px-8 py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img src="c1-assets/fish-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Fish</h4>
+          <p>3 items</p>
+        </div>
+      <!-- card 3 -->
+        <div class="bg-browse-color px-8  py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img src="c1-assets/cat-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Cat</h4>
+          <p>3 items</p>
+        </div>
+        <!-- card 4 -->
+        <div class="bg-browse-color px-8 py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img src="c1-assets/bird-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Birds</h4>
+          <p>3 items</p>
+        </div>
+        <!-- card 5 -->
+        <div class="bg-browse-color px-8  py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img src="c1-assets/mouse-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Small pet</h4>
+          <p>3 items</p>
+        </div>
+        <!-- card 6 -->
+        <div class="bg-browse-color px-8 py-6 rounded-lg flex flex-col items-center gap-3">
+          <div class="bg-white rounded-full p-4"><img class="w-10 h-10" src="c1-assets/rabbit-cartoon.png" alt=""></div>
+          <h4 class="text-[20px] adlam-font">Rabit</h4>
+          <p>2 items</p>
+        </div>
+    
+      </div>
+
+    </section>
 
   </main>
   <footer></footer>
