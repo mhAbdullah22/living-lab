@@ -25,6 +25,10 @@
           'header-color': 'rgb(255, 220, 38)',
           'header-bg-color':'rgb(255, 249, 244)',
           'browse-color':'rgb(249, 223, 138)',
+          'grad1':'rgb(248, 204, 251) 1.286%',
+          'grad2':'rgb(172, 210, 253) 100%',
+          'grad3':'rgb(255, 249, 244) 1.511%',
+          'grad4':'rgb(249, 223, 138) 100%',
 
         }
       }
@@ -106,7 +110,7 @@
     </div>
   <!-- browse section -->
     <section class="mx-3 mb-8">
-      <h3 class="text-4xl adlam-font mb-6">Browse By Categories</h3>
+      <h3 class="text-2xl lg:text-4xl adlam-font mb-6">Browse By Categories</h3>
       <!--card container  -->
       <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 ">
       <!-- card 1 -->
@@ -149,6 +153,37 @@
       </div>
 
     </section>
+
+    <!-- Everyday low price -->
+     <section class="mx-3 mb-8">
+      <h3 class="text-2xl lg:text-4xl adlam-font mb-6">Everday low price</h3>
+    <div class="flex lg:flex-row flex-col  gap-5">
+      <!-- card 1 -->
+      <div class="flex lg:items-center bg-gradient-to-r from-grad1 to-grad2 px-14 rounded-lg">
+       <div class="my-5">
+        <p class="text-xl hidden lg:block">Under price</p>
+        <h3 class="3xl adlam-font py-2 text-nowrap md:text-nowrap">Pet Grooming Mitt</h3>
+        <p class="text-2xl text-white adlam-font hidden lg:block text-nowrap">(Easy Hair Removal)</p>
+        <h3 class="text-3xl lg:text-5xl adlam-font  text-white lg:text-black -my-2 lg:my-3">$7.99</h3>
+       </div>
+        
+       <div> <img class="w-[420px] h-[350px] lg:h-[440px] ml-14 " src="c1-assets/cute-dog-mid.png" alt=""></div>
+      </div>
+      <!-- card 2 -->
+      <div class="flex bg-gradient-to-r from-grad3 to-grad4
+      rounded-lg px-5 py-4">
+        <div class="my-4">
+          <h3 class="lg:text-3xl text-2xl text-nowrap adlam-font">T-Shirt for Dogs</h3>
+        <h3 class="text-3xl lg:text5xl text-header-color adlam-font">$7.99</h3>
+        </div>
+        <div class="mt-10">
+          <img src="c1-assets/cute-pet-mid.png" alt="">
+        </div>
+      
+      </div>
+    </div>
+
+     </section>
 
   </main>
   <footer></footer>
